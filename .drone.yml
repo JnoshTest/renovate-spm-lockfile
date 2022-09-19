@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: build
+    image: swift:5.7.0-jammy
+    commands:
+      - swift build
+
+trigger:
+  branch:
+    - main
