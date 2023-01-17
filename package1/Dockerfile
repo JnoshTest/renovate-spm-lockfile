@@ -1,7 +1,7 @@
 # ================================
 # Build image
 # ================================
-FROM swift:5.7.0-jammy as build
+FROM swift:5.7.2-jammy@sha256:d3988f9bf2571587ea426ca4068ce15c00db15dfee0646217134fa7183a40dd2 as build
 
 # Install OS updates and, if needed, sqlite3
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true \
